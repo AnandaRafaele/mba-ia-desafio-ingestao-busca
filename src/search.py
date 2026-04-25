@@ -25,5 +25,8 @@ PERGUNTA DO USUÁRIO:
 RESPONDA A "PERGUNTA DO USUÁRIO"
 """
 
-def search_prompt(question=None):
-    pass
+def search_prompt(context=None, question=None):
+    if question is None:
+        raise ValueError("Question is required")
+    
+    return PROMPT_TEMPLATE.format(contexto=context, pergunta=question)
