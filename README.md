@@ -27,7 +27,9 @@ cp .env.example .env
 - `DATABASE_URL` (exemplo compatível com o `docker-compose.yml`):
   - `postgresql+psycopg://postgres:postgres@localhost:5432/rag`
 - `PG_VECTOR_COLLECTION_NAME` (ex.: `gpt5_collection`)
+  - Esse nome identifica a “coleção” (tabela) no Postgres/pgVector onde os chunks serão armazenados.
 - `PDF_PATH` (ex.: `./document.pdf`)
+  - Caminho do PDF a ser ingerido (relativo ao diretório do projeto).
 
 ## Instalação
 
